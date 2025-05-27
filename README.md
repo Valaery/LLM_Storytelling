@@ -2,8 +2,8 @@
 
 A powerful tool for generating stories using Large Language Models (LLMs) with Retrieval-Augmented Generation (RAG) capabilities.
 
-**Author:** Your Name  
-**Repository:** https://github.com/yourusername/llm-story-generator
+**Author:** Joan Alcaraz  
+**Repository:** https://github.com/valaery/llm-story-generator
 
 ## Features
 
