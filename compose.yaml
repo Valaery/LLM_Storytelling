@@ -1,0 +1,20 @@
+services:
+  llama.cpp:
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids:
+                - "0"
+              capabilities:
+                - gpu
+    volumes:
+      - ./models:/models
+    ports:
+      - 8000:8000
+    image: ghcr.io/ggml-org/llama.cpp:server-cuda
+    command: -hf Qwen/Qwen3-30B-A3B-GGUF:Q4_K_M --port 8000 -fa -c 4096 --alias "Qwen3-30B"
+networks: {}
+
