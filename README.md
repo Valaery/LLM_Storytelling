@@ -2,6 +2,9 @@
 
 A powerful tool for generating stories using Large Language Models (LLMs) with Retrieval-Augmented Generation (RAG) capabilities.
 
+**Author:** Your Name  
+**Repository:** https://github.com/yourusername/llm-story-generator
+
 ## Features
 
 - Story generation using LLMs
@@ -10,6 +13,10 @@ A powerful tool for generating stories using Large Language Models (LLMs) with R
 - Story management and analytics
 - Web interface for story browsing and export
 - Comprehensive test coverage
+
+## Requirements
+
+- Python 3.10+
 
 ## Installation
 
@@ -30,9 +37,9 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-4. Install development dependencies:
+4. Install development dependencies (optional):
 ```bash
-pip install -r requirements-test.txt
+pip install ruff pytest pytest-cov mypy types-requests types-PyPDF2
 ```
 
 ## Usage
@@ -56,15 +63,17 @@ python -m llm_story_generator
 pytest
 ```
 
-- Run type checking:
+- Run type checking (strict type hints enforced):
 ```bash
 mypy .
 ```
 
-- Run linting:
+- Run linting and formatting (Ruff):
 ```bash
 ruff check .
 ```
+
+- All code must include Google-style docstrings and type hints as per project rules.
 
 ## Project Structure
 

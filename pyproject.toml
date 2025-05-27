@@ -2,6 +2,17 @@
 requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
 
+[project]
+name = "llm_story_generator"
+version = "0.1.0"
+description = "A powerful tool for generating stories using Large Language Models (LLMs) with RAG capabilities."
+authors = [
+    { name = "Your Name", email = "your.email@example.com" }
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = { file = "LICENSE" }
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 python_files = ["test_*.py"]
